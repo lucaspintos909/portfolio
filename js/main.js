@@ -1,2 +1,2 @@
-const modules = ["modules/navbar", "modules/navbar"];
+const modules = ["modules/navbar", "modules/skillsAccordion"];
 requirejs(modules, function () {});
