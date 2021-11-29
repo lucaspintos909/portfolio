@@ -7,7 +7,10 @@
     <title>Lucas Pintos Portafolio</title>
 
     <!-- ################# GOOGLE ICONS ################ -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <!-- ################# CSS ################ -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -17,54 +20,97 @@
     <!-- ======================= HEADER ======================= -->
     <header class="header" id="header">
       <nav class="nav container">
-
         <a href="#" class="nav__logo">Lucas Pintos</a>
 
         <div id="nav-menu" class="nav__menu">
           <ul class="grid nav__list">
-
             <li class="nav__item">
               <a href="#home" class="nav__link">
-                <span class="nav__icon material-icons">home</span> Home
+                <i class="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <span class="nav__icon material-icons">person</span> Sobre mí
+                <i class="uil uil-user nav__icon"></i> Sobre mí
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <span class="nav__icon material-icons">description</span> Skills
+                <i class="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#works" class="nav__link">
-                <span class="nav__icon material-icons">business_center</span> Portafolio
+                <i class="uil uil-bag-alt nav__icon"></i> Portafolio
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <span class="nav__icon material-icons">send</span> Contactame
+                <i class="uil uil-message nav__icon"></i> Contactame
               </a>
             </li>
           </ul>
-          <span id="nav-close" class="material-icons nav__close">close</span>
+          <i id="nav-close" class="uil uil-times nav__close"></i>
         </div>
         <div class="nav__btns">
           <div id="nav-toggle" class="nav__toggle">
-            <span class="nav__icon material-icons">grid_view</span>
+            <i class="uil uil-apps nav__icon"></i>
           </div>
         </div>
       </nav>
     </header>
     <!-- ======================= MAIN ======================= -->
     <main class="main">
+      <!-- ======================= HOME ======================= -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/lucas-pintos-b448a3224"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
 
+              <a
+                href="https://github.com/lucaspintos909"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <img src="img/fotico.jpg" alt="Imagen de perfil" + />
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Soy Lucas Pintos</h1>
+              <h3 class="home__subtitle">Desarrollador Web Jr</h3>
+              <p class="home__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                dolores molestiae deserunt. Magnam rem voluptates delectus,
+                nobis debitis iusto.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contactame<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Deslizar hacia abajo</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- ======================= FOOTER ======================= -->
 
