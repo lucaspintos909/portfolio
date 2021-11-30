@@ -419,6 +419,10 @@ img {
   cursor: pointer;
 }
 
+.skills__header:last-child{
+  margin-bottom: 0;
+}
+
 .skills__icon,
 .skills__arrow {
   font-size: 3.2rem;
