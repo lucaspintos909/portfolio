@@ -358,6 +358,34 @@
       </section>
 
       <!-- ======================= SERVICES ======================= -->
+      <!-- ======================= PORTFOLIO ======================= -->
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portafolio</h2>
+        <span class="section__subtitle">Mi trabajo más reciente</span>
+
+        <div class="portfolio__container container" x-data="portfolio">
+          <!-- =========== PORTFOLIO CONTENT =========== -->
+          <template x-for="project in projects">
+            <div class="portfolio__content grid">
+              <img
+                :src="project.img"
+                :alt="project.image_alt"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title" x-text="project.title"></h3>
+                <p class="portfolio__description" x-text="project.description"></p>
+                <a :href="project.demo" class="button button--flex portfolio__button">
+                  Ver más
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
     </main>
     <!-- ======================= FOOTER ======================= -->
 
