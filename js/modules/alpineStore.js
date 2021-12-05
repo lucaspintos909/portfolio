@@ -20,7 +20,7 @@ document.addEventListener("alpine:init", () => {
         qualifications: [
           {
             title: "Bachiller Informático",
-            additional_info: 'Énfasis desarrollo web',
+            additional_info: "Énfasis desarrollo web",
             subtitle: "ESI - Uruguay",
             years: "2019 - 2021",
             right_side: false,
@@ -45,6 +45,25 @@ document.addEventListener("alpine:init", () => {
             right_side: true,
           },
         ],
+      },
+    ],
+  }));
+
+  Alpine.data("portfolio", () => ({
+    projects: [
+      {
+        title: "Blog de café",
+        img: "assets/img/blog_café_project.png",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+        demo: '#',
+        image_alt: 'Imágen blog de café'
+      },
+      {
+        title: "Bienes Raíces",
+        img: "assets/img/bienes_raices_project.png",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+        demo: '#',
+        image_alt: 'Imágen de web bienes raíces'
       },
     ],
   }));
