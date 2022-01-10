@@ -614,7 +614,7 @@ img {
 }
 
 .portfolio__content{
-
+  gap: 4.2rem!important;
 }
 
 .portfolio__img{
@@ -643,4 +643,31 @@ img {
 
 .swiper-portfolio-icon{
   font-size: 3.2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: -1.8rem;
+}
+
+.swiper-button-next{
+  right: -1.8rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets{
+  bottom: -4rem!important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+.swiper-button-prev,
+.swiper-button-next{
+  margin-top: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+  outline: none;
 }
