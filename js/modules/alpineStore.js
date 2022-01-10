@@ -54,16 +54,26 @@ document.addEventListener("alpine:init", () => {
       {
         title: "Blog de café",
         img: "assets/img/blog_café_project.png",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
-        demo: '#',
-        image_alt: 'Imágen blog de café'
+        description:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+        demo: "https://blogdecafe-project.netlify.app/",
+        image_alt: "Imágen blog de café",
       },
       {
         title: "Bienes Raíces",
         img: "assets/img/bienes_raices_project.png",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
-        demo: '#',
-        image_alt: 'Imágen de web bienes raíces'
+        description:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+        demo: "https://bienes-raices-project.netlify.app/",
+        image_alt: "Imágen de web bienes raíces",
+      },
+      {
+        title: "Todo List",
+        img: "assets/img/javascript_todolist.png",
+        description:
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+        demo: "https://j4vascript-todo-list.netlify.app/",
+        image_alt: "Imágen de web bienes raíces",
       },
     ],
   }));
