@@ -1,7 +1,9 @@
 "use strict";
 
+const modules = ["navbar", "skillsAccordion", "qualificationTabs", "swiper"];
+
 requirejs.config({
   baseUrl: "js/modules",
 });
-const modules = ["navbar", "skillsAccordion", "qualificationTabs"];
+
 requirejs(modules, function () {});
