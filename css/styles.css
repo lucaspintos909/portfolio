@@ -823,3 +823,29 @@ img {
   color: var(--text-color-light);
   margin-top: var(--m-3);
 }
+
+/* #################### SCROLLUP #################### */
+.scrollup{
+  position: fixed;
+  right: 1.6rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: .8;
+  padding: 0 .48rem;
+  border-radius: .64rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scrollup__icon{
+  font-size: 2.4rem;
+  color: #FFF;
+}
+
+.show-scroll{
+  bottom: 6rem;
+}
