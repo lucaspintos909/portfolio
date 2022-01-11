@@ -171,6 +171,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: .3s ease;
 }
 
 /* #################### NAVBAR #################### */
@@ -179,7 +180,7 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  /* align-items: center;*/
+  align-items: center;
 }
 
 .nav__logo,
@@ -258,6 +259,12 @@ img {
 .active-link{
   color: var(--first-color);
 }
+
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+
 /* #################### HOME #################### */
 .home__container {
   gap: 1.6rem;
