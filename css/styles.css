@@ -255,6 +255,9 @@ img {
   bottom: 0;
 }
 
+.active-link{
+  color: var(--first-color);
+}
 /* #################### HOME #################### */
 .home__container {
   gap: 1.6rem;
