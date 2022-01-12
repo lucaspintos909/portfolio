@@ -171,6 +171,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  transition: .3s ease;
 }
 
 /* #################### NAVBAR #################### */
@@ -179,7 +180,7 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  /* align-items: center;*/
+  align-items: center;
 }
 
 .nav__logo,
@@ -254,6 +255,15 @@ img {
 .show-menu {
   bottom: 0;
 }
+
+.active-link{
+  color: var(--first-color);
+}
+
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
 
 /* #################### HOME #################### */
 .home__container {
@@ -812,4 +822,30 @@ img {
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--m-3);
+}
+
+/* #################### SCROLLUP #################### */
+.scrollup{
+  position: fixed;
+  right: 1.6rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: .8;
+  padding: 0 .48rem;
+  border-radius: .64rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover{
+  background-color: var(--first-color-alt);
+}
+
+.scrollup__icon{
+  font-size: 2.4rem;
+  color: #FFF;
+}
+
+.show-scroll{
+  bottom: 6rem;
 }

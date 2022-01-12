@@ -24,3 +24,40 @@ if (navClose) {
 const navLinks = document.querySelectorAll(".nav__link");
 
 navLinks.forEach((link) => link.addEventListener("click", hideMenu));
+
+/* --------------SCROLL SECTIONS-------------- */
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+
+  for (let current of sections) {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
+    }
+  }
+}
+
+window.addEventListener("scroll", scrollActive);
+
+function scrollHeader() {
+  const scrollY = window.pageYOffset;
+  const nav = document.getElementById("header");
+  if (scrollY >= 80) {
+    nav.classList.add("scroll-header");
+  } else {
+    nav.classList.remove("scroll-header");
+  }
+}
+
+window.addEventListener("scroll", scrollHeader);
