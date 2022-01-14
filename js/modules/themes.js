@@ -3,6 +3,8 @@ const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
 
+const logoImg = document.getElementById("logo-img");
+
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
@@ -22,6 +24,7 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
     iconTheme
   );
+  logoImg.setAttribute("src", `./assets/img/${getCurrentTheme()}-logo.svg`);
 }
 
 // Activate / deactivate the theme manually with the button
@@ -32,4 +35,6 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+
+  logoImg.setAttribute("src", `./assets/img/${getCurrentTheme()}-logo.svg`);
 });
