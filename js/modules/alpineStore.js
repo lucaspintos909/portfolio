@@ -21,7 +21,7 @@ document.addEventListener("alpine:init", () => {
           {
             title: "Bachiller Informático",
             additional_info: "Énfasis desarrollo web",
-            subtitle: "ESI - Uruguay",
+            subtitle: "Escuela Superior de Informática - Uruguay",
             years: "2019 - 2021",
             right_side: false,
           },
@@ -55,7 +55,7 @@ document.addEventListener("alpine:init", () => {
         title: "Blog de café",
         img: "assets/img/blog_café_project.png",
         description:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, impedit!",
+          "Página web estatica hecha con HTML y CSS",
         demo: "https://blogdecafe-project.netlify.app/",
         image_alt: "Imágen blog de café",
       },
