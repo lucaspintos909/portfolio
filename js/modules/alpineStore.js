@@ -19,6 +19,12 @@ document.addEventListener("alpine:init", () => {
         classes: "qualification__active",
         qualifications: [
           {
+            title: "Licenciatura en Informática",
+            subtitle: "Universidad de Montevideo - Uruguay",
+            years: "2022 - Actualidad",
+            right_side: true,
+          },
+          {
             title: "Bachiller Informático",
             additional_info: "Énfasis desarrollo web",
             subtitle: "Escuela Superior de Informática - Uruguay",
