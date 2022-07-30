@@ -45,8 +45,14 @@ document.addEventListener("alpine:init", () => {
         classes: "",
         qualifications: [
           {
+            title: "Pasante de Desarrollo",
+            subtitle: "Unidad Informática, Facultad de Psicología, UdelaR.",
+            years: "2022 - Actualidad",
+            right_side: false,
+          },
+          {
             title: "Desarrollador web",
-            subtitle: "Freelance, Uruguay",
+            subtitle: "Freelance",
             years: "2020",
             right_side: true,
           },
