@@ -45,9 +45,15 @@ document.addEventListener("alpine:init", () => {
         classes: "",
         qualifications: [
           {
+            title: "Técnico en Análisis de Servicios",
+            subtitle: "Ceibal.",
+            years: "2022 - Actualidad",
+            right_side: true,
+          },
+          {
             title: "Pasante de Desarrollo",
             subtitle: "Unidad Informática, Facultad de Psicología, UdelaR.",
-            years: "2022 - Actualidad",
+            years: "abr. 2022 - sep. 2022",
             right_side: false,
           },
           {
